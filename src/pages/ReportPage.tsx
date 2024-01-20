@@ -133,8 +133,8 @@ export const ReportPage = () => {
               <Title order={4}>Authors</Title>
               <ReactDiffViewer
                 showDiffOnly={false}
-                oldValue={article.authors.join('\r\n')}
-                newValue={article.modified_by_qa_authors.join('\r\n')}
+                oldValue={(article.authors ?? []).join('\r\n')}
+                newValue={(article.modified_by_qa_authors ?? []).join('\r\n')}
                 splitView={true}
               />
             </Card.Section>
