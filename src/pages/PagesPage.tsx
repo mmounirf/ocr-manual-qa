@@ -24,7 +24,7 @@ export const PagesPage = () => {
           loadingSkeletons.map((key) => (
             <Skeleton key={key} animate visible height={300} width='100%' />
           ))}
-        {!isFetching && pagesData.map((page) => <PageCard page={page as Page} key={page.id} />)}
+        {!isFetching && pagesData.map((page) => <PageCard page={page as unknown as Page} key={page.id} />)}
       </SimpleGrid>
     </Container>
   );

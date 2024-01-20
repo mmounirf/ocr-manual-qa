@@ -1,6 +1,6 @@
 import { Container, LoadingOverlay, SimpleGrid, Stack } from '@mantine/core';
 import { useParams } from 'react-router-dom';
-import { useGetPageQuery } from '../api/pages.ts';
+import { useGetPageQuery } from '../api/pages';
 import { ArticleImage, ArticlesList } from '../components';
 
 export const PageDetailsPage = () => {
