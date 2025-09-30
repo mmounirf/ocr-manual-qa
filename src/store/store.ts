@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { articlesApi } from '../api/articles';
 import { documentsApi } from '../api/documents';
-import { pagesApi } from '../api/pages.ts';
 import { appSlice } from './app.slice';
 import { updateArticleListener } from './middlewares';
+import { pagesApi } from '../api/pages';
 
 const store = configureStore({
   reducer: {

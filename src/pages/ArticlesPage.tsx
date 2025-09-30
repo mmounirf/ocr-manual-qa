@@ -14,7 +14,7 @@ import { IconCalendar } from '@tabler/icons-react';
 import dayjs from 'dayjs';
 import { useEffect, useState } from 'react';
 import { useFilterArticlesMutation } from '../api/articles';
-import { Article, ArticleStatus } from '../api/types';
+import { type Article, ArticleStatus } from '../api/types';
 import { FilteredArticlesList } from '../components';
 import ArticleImage from '../components/ArticleImage';
 import { useAppSelector } from '../store/hooks';
@@ -70,7 +70,6 @@ export const ArticlesPage = () => {
           w='50%'
           icon={<IconCalendar size='1.1rem' stroke={1.5} />}
           label='Filter articles by Date'
-          placeholder='Pick a date'
           monthLabelFormat='YYYY-MM-DD'
           yearLabelFormat='YYYY'
           valueFormat='YYYY-MM-DD'
